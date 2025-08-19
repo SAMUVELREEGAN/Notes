@@ -1,0 +1,6 @@
+let name;         // declared
+name = "Sam";     // assigned
+name = "David";   // reassigned
+let age = 25;     // initialized
+var city = "Chennai";
+var city = "Delhi"; // redeclared
