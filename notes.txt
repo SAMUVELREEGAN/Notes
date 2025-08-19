@@ -1,11 +1,11 @@
-let name;         // ✅ declared using let
-name = "Sam";     // ✅ assigned value
-name = "David";   // ✅ reassigned (allowed with let)
+let name;         //declared using let
+name = "Sam";     //assigned value
+name = "David";   //reassigned (allowed with let)
 
-let age = 25;     // ✅ declared and initialized
+let age = 25;     //declared and initialized
 
-var city = "Chennai";  // ✅ declared and initialized with var
-var city = "Delhi";    // ✅ redeclared using var (allowed with var)
+var city = "Chennai";  //declared and initialized with var
+var city = "Delhi";    //redeclared using var (allowed with var)
 
 
 
