@@ -10,3 +10,23 @@ var city = "Delhi";    //redeclared using var (allowed with var)
 
 
 slice , splice
+
+
+closure ==> inner function can still use outer function's variable even after outer is finished
+ex:  
+  function outer(){
+          name = "SAM"
+
+          function inner(){
+            console.log(name)
+            }
+          return inner;
+  }
+  const greets = outer();
+  greets()
+==>output=>SAM
+
+
+
+
+
