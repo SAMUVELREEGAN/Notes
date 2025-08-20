@@ -10,6 +10,9 @@ var city = "Delhi";    //redeclared using var (allowed with var)
 
 
 slice , splice
+find , filter
+
+
 
 
 closure ==> inner function can still use outer function's variable even after outer is finished
