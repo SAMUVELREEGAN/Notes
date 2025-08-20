@@ -45,4 +45,25 @@ outer(); // prints "SAM"
 
 
 
+Portion (does NOT change original array → new copy create pannum)
+
+  slice(start, end) → portion of array return pannum.
+  map() → new array create pannum.
+  filter() → condition kooda new array return pannum.
+  find() → condition satisfy panna first element return pannum (original unchanged).
+  concat() → 2 arrays join pannum → new array return.
+  toString() / join() → string return pannum (array untouched).
+
+Original (changes the actual array → mutate pannum)
+
+  push() → add to end.
+  pop() → remove last.
+  shift() → remove first.
+  unshift() → add to start.
+  splice(start, deleteCount, items...) → delete/insert original la change.
+  sort() → array la order change pannum.
+  reverse() → order reverse pannum.
+
+
+
 
