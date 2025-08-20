@@ -15,7 +15,7 @@ slice , splice
 closure ==> inner function can still use outer function's variable even after outer is finished
 ex:  
   function outer(){
-          name = "SAM"
+        let  name = "SAM"
 
           function inner(){
             console.log(name)
