@@ -1,1 +1,4 @@
-
+find:
+  first matching item to return
+  let arr = [1,2,4,5]
+  console.log(arr.find(x => x > 3))
