@@ -2,3 +2,8 @@ find:
   first matching item to return
   let arr = [1,2,4,5]
   console.log(arr.find(x => x > 3))
+
+filter:
+  filter item by condition return new array
+  let arr = [1,2,3,4,5]
+  console.log(arr.filter(x => x > 3))
