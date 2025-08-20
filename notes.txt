@@ -27,6 +27,19 @@ ex:
 ==>output=>SAM
 
 
+function outer() {
+    let name = "SAM";
+
+    function inner() {
+        console.log(name);
+    }
+
+    inner();  // directly called here
+}
+
+outer(); // prints "SAM"
+
+
 
 
 
