@@ -1,0 +1,74 @@
+1. Element Selection (DOM Access):
+
+document.getElementById("id") → One element by ID
+document.getElementsByClassName("class") → All elements (HTMLCollection)
+document.getElementsByTagName("tag") → All elements with that tag
+document.querySelector("css-selector") → First matching element
+document.querySelectorAll("css-selector") → All matching elements (NodeList)
+
+2. Create / Insert / Remove:
+
+document.createElement("tag") → Create new element
+document.createTextNode("text") → Create text node
+element.appendChild(node) → Add inside end
+element.prepend(node) → Add inside beginning
+element.before(node) → Insert before element
+element.after(node) → Insert after element
+element.remove() → Remove element
+parent.removeChild(child) → Remove child
+
+3. Modify Content:
+
+element.innerHTML → Get/Set HTML content
+element.textContent → Get/Set text only
+element.innerText → Get/Set visible text
+element.setAttribute("attr", "value")
+element.getAttribute("attr")
+element.removeAttribute("attr")
+
+4. CSS & Classes:
+
+element.style.property = "value"
+element.classList.add("class")
+element.classList.remove("class")
+element.classList.toggle("class")
+element.classList.contains("class")
+
+5. Events:
+
+element.addEventListener("event", callback)
+element.removeEventListener("event", callback)
+element.onclick = function() { ... }
+
+6. Traversal (Moving Around DOM):
+
+element.parentElement
+element.children
+element.firstElementChild
+element.lastElementChild
+element.nextElementSibling
+element.previousElementSibling
+
+
+7. Forms Special
+
+document.forms
+form.elements
+input.value
+input.checked
+input.disabled
+input.focus() / blur()
+
+8. Document / Window:
+
+document.body
+document.head
+document.title
+document.cookie
+document.URL
+window.location
+window.history
+window.localStorage / sessionStorage
+
+
+
