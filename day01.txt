@@ -119,3 +119,60 @@ Array.from
 Array.of
 
 
+Number & Math Functions:
+
+Number()
+parseInt()
+parseFloat()
+isNaN()
+isFinite()
+Math.round()
+Math.floor()
+Math.ceil()
+Math.max() / Math.min()
+Math.random()
+Math.pow()
+Math.sqrt()
+
+
+Object Methods:
+
+Object.keys()
+Object.values()
+Object.entries()
+Object.assign()
+Object.freeze()
+Object.seal()
+Object.create()
+
+Set & Map Methods:
+
+Set
+
+add
+delete
+has
+clear
+forEach
+
+Map
+
+set
+get
+has
+delete
+clear
+forEach
+
+
+Global Functions (like parseInt)
+
+parseInt()
+parseFloat()
+eval()
+isNaN()
+isFinite()
+encodeURI / decodeURI
+encodeURIComponent / decodeURIComponent
+
+
