@@ -45,6 +45,8 @@ outer(); // prints "SAM"
 
 
 
+
+
 Portion (does NOT change original array → new copy create pannum)
 
   slice(start, end) → portion of array return pannum.
@@ -64,6 +66,56 @@ Original (changes the actual array → mutate pannum)
   sort() → array la order change pannum.
   reverse() → order reverse pannum.
 
+ex:
+Original Array:
 
+copyWithin
+fill
+pop
+push
+reverse
+shift
+sort
+splice
+unshift
+
+
+Do NOT Modify Original Array:
+
+at
+concat
+entries
+every
+filter
+find
+findIndex
+findLast
+findLastIndex
+flat
+flatMap
+forEach
+includes
+indexOf
+join
+keys
+lastIndexOf
+map
+reduce
+reduceRight
+slice
+some
+toLocaleString
+toString
+values
+toReversed
+toSorted
+toSpliced
+with
+
+Static (Array Class Itself):
+
+Array.isArray
+Array.from
+Array.of
 
 
