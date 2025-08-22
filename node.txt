@@ -1,1 +1,4 @@
 Remove-Item -Recurse -Force node_modules
+
+package.json ==> name, version, scripts, dependencies
+package.lock.json ==> dependency tree
