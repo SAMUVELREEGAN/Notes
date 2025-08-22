@@ -1,0 +1,13 @@
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback(); // function call back later
+}
+
+function sayBye() {
+  console.log("Goodbye!");
+}
+
+greet("Sam", sayBye);
+
+
+
