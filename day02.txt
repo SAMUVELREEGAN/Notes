@@ -3,6 +3,9 @@ find:
   let arr = [1,2,4,5]
   console.log(arr.find(x => x > 3))
 
+  find ==> condition ==> return one value
+  find ==> without condition ==> return all
+
 filter:
   filter item by condition return new array
   let arr = [1,2,3,4,5]
