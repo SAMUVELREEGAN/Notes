@@ -1,0 +1,86 @@
+DDL:
+create , alter ,drop , truncate , rename
+
+DML:
+select , insert , delete , update
+
+
+ddl:
+
+1) property(database) , 2) properties(table_name) , 3)inside tabel field name for entire row
+
+1) use property; => this is database(schema)
+
+2) show tables; => show all table names
+
+3) show table field name  =>describe properties;
+
+
+
+
+1] create
+
+create table & column  => create table table_name(
+                    coulmn_name datatype
+                    )
+
+
+
+2]
+alter
+change table name  => alter table table_name rename to new_table_name;
+rename table field(column) name  => alter table table_name rename column description to des;
+
+add table new filed(column) name  => alter table table_name add column description varchar(100);
+delete table from field(column) name  => alter table table_name drop column description;
+rename table field(column) name  => alter table table_name rename column description to des;
+
+change data type  => alter table table_name modify column price decimal(12,2)
+
+3]
+drop vs truncate
+
+drop  => complete delete  =>drop table table_name
+truncate => only delete datas , but this no romove for table name and filed name with datatype  =>truncate table table_name;
+
+
+
+
+dml:
+
+insert:
+
+insert into tablename(coulm_name) values(
+('value1'),('value2'),('value3');
+
+
+INSERT INTO departments (name) VALUES
+ ('Engineering'), ('HR'), ('Sales');
+
+INSERT INTO employees (name,email,age,salary,dept_id) VALUES
+ ('Sam','sam@company.com',25,50000,1),
+ ('Anu','anu@company.com',29,65000,1),
+ ('Ravi','ravi@company.com',32,40000,2),
+ ('Meera','meera@company.com',27,45000,3);
+
+
+
+update:
+update table_name set name="sam" ,age=22 where city="dindigul";
+update table_name set name="sam"  ==> this is set all name to chage sam
+
+
+delete
+delete from table_name where emp_id=10;
+
+
+DELETE = row by row delete → slow, rollback possible, auto_increment reset aagathu.
+TRUNCATE = full clean → fast, rollback illa, auto_increment reset aagum.
+
+
+
+select * from table_name;
+
+select  => select * from
+where  => select * from table_name 
+order by ==> select role , agent_id , city_id from properties order by city_id asc;
