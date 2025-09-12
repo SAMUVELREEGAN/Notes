@@ -1,0 +1,80 @@
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
+export default function AnimatedText({
+  text,
+  as = "p", // default wrapper <p>, but can be h1/h2/p
+  speed = 70,
+  delay = 0,
+  style = {},
+  className = "",
+}) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  return (
+    <div ref={ref} className={className}>
+      {inView && (
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay }}
+        >
+          <TypeAnimation
+            sequence={[text, 1000]}
+            wrapper={as}
+            cursor={false}
+            speed={speed}
+            style={style}
+          />
+        </motion.div>
+      )}
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import AnimatedText from "./AnimatedText";
+
+export default function AboutPage() {
+  return (
+    <div style={{ padding: "80px" }}>
+      <AnimatedText
+        text="About Our Company"
+        as="h2"
+        speed={70}
+        style={{ fontSize: "2em", fontWeight: "bold" }}
+      />
+
+      <AnimatedText
+        text="We are building modern web solutions with React and Node.js."
+        as="p"
+        speed={60}
+        delay={0.3} // paragraph start later
+        style={{ fontSize: "1.1em", marginTop: "12px" }}
+      />
+    </div>
+  );
+}
