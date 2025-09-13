@@ -78,3 +78,74 @@ export default function AboutPage() {
     </div>
   );
 }
+
+
+
+
+
+
+
+import React from "react";
+import pic from "../asstes/fur8.jpg";
+
+const TextImage = () => {
+  return (
+    <div
+      style={{
+        width: "500px",   // container size
+        height: "300px",
+        overflow: "hidden",
+        borderRadius: "12px",
+        position: "relative",
+      }}
+    >
+      <div
+        style={{
+          width: "10%",   // start with 10% visible
+          height: "100%",
+          overflow: "hidden",
+          animation: "smoothReveal 2s linear forwards", // smooth expand
+        }}
+      >
+        <img
+          src={pic}
+          alt="furniture"
+          style={{
+            width: "500px",   // original image size
+            height: "100%",
+            objectFit: "cover",
+          }}
+        />
+      </div>
+
+      <style>
+        {`
+          @keyframes smoothReveal {
+            from { width: 10%; }
+            to   { width: 100%; }
+          }
+        `}
+      </style>
+    </div>
+  );
+};
+
+export default TextImage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
