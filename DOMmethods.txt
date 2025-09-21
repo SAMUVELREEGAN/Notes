@@ -59,6 +59,7 @@ input.checked
 input.disabled
 input.focus() / blur()
 
+
 8. Document / Window:
 
 document.body
