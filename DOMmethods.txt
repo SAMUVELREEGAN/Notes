@@ -70,6 +70,3 @@ document.URL
 window.location
 window.history
 window.localStorage / sessionStorage
-
-
-
